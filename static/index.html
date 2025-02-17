@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eucalyptus Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eucalyptus Detection Using Satellite Data</h1>
+
+        <!-- Search Box -->
+        <input id="searchBox" class="form-control" type="text" placeholder="Search for a location" style="width: 100%; padding: 10px; margin-bottom: 20px;">
+
+        <!-- Map -->
+        <div id="map" style="width: 100%; height: 400px;"></div>
+
+        <!-- Coordinates List -->
+        <div id="coordinatesListContainer" style="margin-top: 20px;">
+            <h2>Detected Coordinates:</h2>
+            <ul id="coordinatesList"></ul> <!-- Fixed duplicate ID issue -->
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls" style="margin-top: 20px;">
+            <button id="detectButton" style="padding: 10px 20px; margin-right: 10px;">Detect Eucalyptus</button>
+            <button id="clearButton" style="padding: 10px 20px;">Clear AOI</button>
+        </div>
+    </div>
+
+    <!-- Load Google Maps API with Callback -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZwFjdMudqSztRroOLY1kAXXAR0xJugns&libraries=drawing,places&callback=initMap" async defer></script>
+
+    <!-- Load Main JavaScript (Ensure Google Maps is Ready First) -->
+    <script src="/main.js"></script>
+</body>
+</html>
