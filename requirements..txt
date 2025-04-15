@@ -1,6 +1,0 @@
-fastapi
-uvicorn
-ee
-shapely
-numpy
-pandas
